@@ -1,6 +1,29 @@
 # vm
 Build Custom Virtual Machines using any Language or Runtime that can then later get Compiled for Any Platform Arch.
 
+## Features
+
+### RISC-V system emulator 
+RV128IMAFDQC base ISA (user level ISA version 2.2, priviledged architecture version 1.10) 
+including:
+- 32/64/128 bit integer registers
+- 32/64/128 bit floating point instructions (using the SoftFP Library)
+- Compressed instructions
+- Dynamic XLEN change
+
+### x86 system emulator based on KVM
+- VirtIO console, network, block device, input and 9P filesystem
+- Graphical display with SDL
+Remote HTTP block device and filesystem
+Remote Network Support 
+
+### Support for other Emulations like
+- https://github.com/ptitSeb/box64/
+
+### Cross Platform Host OS Bindings
+- Windows / WSLg / virtio / kvm / qemu
+- Linux,Mac,Android,virtio / kvm / qemu
+
 ## Components
 
 ### Core Languages
